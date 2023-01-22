@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Aplikacja pogodowa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <img class="back-arrow" src="./arrow-left-circle-fill.svg" alt="back arrow">
+    <header>
+        <div class="centigrade-main-img">
+            <img src="./centigrade.png" alt="centigrade">
+        </div>
+    </header>
+    <main>
+        <div class="app-top">
+            <div class="check-weather">
+                <h1>Discover the weather
+                    in your city</h1>
+                <input type="text" placeholder="Podaj nazwę miasta">
+                <button>Search</button>
+                <p class="error"></p>
+            </div>
+            <div class="main-temp-description">
+                <h2 class="city-name"></h2>
+                <p class="date"></p>
+                <div class="temp-box">
+                    <span class="temp"></span>
+                    <img class="temp-img"src=" " alt="">
+                </div>
+                <p class="temp-description"></p>
+            </div>
+            <div class="weather-response">
+                <div class="temp-feel-pressure">
+                    <p>Temperatura odczuwalna: <span class="temp-feels"></span></p>
+                    <p>Ciśnienie: <span class="pressure"></span></p>
+                </div>
+                <div class="temp-hum-speed">
+                    <p>Wilgotność: <span class="humidity"></span></p>
+                    <p>Prędkość wiatru <span class="wind-speed"></span></p>
+                </div>
+            </div>
+        <img class="cloud-left" src="./cloud_left.svg" alt="cloud-left">
+        <img class="cloud-right" src="./cloud_right.png" alt="cloud-right">
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

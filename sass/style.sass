@@ -1,0 +1,154 @@
+@import 'variables'
+@import 'mixins'
+@import 'weather-response'
+
+
+*
+    margin: 0%
+    padding: 0%
+    font-family: $font-family
+
+body
+    background: $background-color
+    height: $background-height
+
+header
+    @include flex-column-container
+    height: 10%
+    width: 100%
+    margin-bottom: 10%
+    .centigrade-main-img
+        width: 20%
+        margin-top: 10%
+        @include flex-column-container
+        img
+            width: 50%
+            margin-left: -20%
+            @media screen and ( max-width: $small-devices )
+                width: 100%
+            @media screen and ( min-width: $small-devices ) and ( max-width: $medium-devices) and (orientation: portrait)
+                width: 70%
+            @media screen and ( min-width: $medium-devices ) and ( max-width: $large-devices)
+                width: 80%
+            @media screen and ( min-width: $small-devices ) and ( max-width: $large-devices) and (orientation: landscape)
+                width: 40%
+main 
+    @media screen and ( max-width: $small-devices )
+        height: 70%
+        @include flex-column-container
+    @media screen and ( min-width: $small-devices ) and ( max-width: $medium-devices) and (orientation: portrait)
+        height: 80%
+        @include flex-column-container
+    @media screen and ( min-width: $medium-devices ) and ( max-width: $large-devices)
+        height: 70%
+        @include flex-column-container
+    @media screen and ( min-width: $small-devices ) and ( max-width: $large-devices) and (orientation: landscape)
+        @include flex-column-container
+        height: 60%
+    @media screen and ( min-width: $large-devices ) and ( max-width: $extra-large-devices)
+        height: 60%
+        @include flex-column-container
+.check-weather
+    width: 100%
+    @include flex-column-container
+    h1
+        font-size: 60px
+        color: $font-color
+        width: 50%
+        text-align: center
+        font-style: normal
+        font-weight: 400
+        line-height: 72px
+        margin-bottom: 5%
+        @media screen and ( max-width: $small-devices )
+            font-size: 30px
+            line-height: 30px
+            width: 70%
+            margin-bottom: 10%
+        @media screen and ( min-width: $small-devices ) and ( max-width: $medium-devices) and (orientation: portrait)
+            font-size: 40px
+            line-height: 48px
+            width: 75%
+            margin-bottom: 8%
+        @media screen and ( min-width: $medium-devices ) and ( max-width: $large-devices)
+            font-size: 45px
+            line-height: 48px
+            width: 70%
+            margin-bottom: 8%
+        @media screen and ( min-width: $small-devices ) and ( max-width: $large-devices) and (orientation: landscape)
+            font-size: 25px
+            line-height: 40px
+            width: 75%
+            margin-top: 5%
+            margin-bottom: 3%
+        @media screen and ( min-width: $large-devices ) and ( max-width: $extra-large-devices)
+            font-size: 45px
+            line-height: 48px
+            width: 60%
+    input
+        background: #867DE4
+        border: 2px solid $font-color
+        border-radius: 50px
+        color: #D8D6F1
+        width: 40%
+        height: 5vh
+        font-size: 25px
+        outline: none
+        text-align: center
+        margin-bottom: 2%
+        font-size: 25px
+        @include placeholder-color
+        @media screen and ( max-width: $small-devices )
+            width: 70%
+            font-size: 15px
+            margin-bottom: 10%
+        @media screen and ( min-width: $small-devices ) and ( max-width: $medium-devices) and (orientation: portrait)
+            width: 60%
+            font-size: 20px
+            margin-bottom: 5%
+        @media screen and ( min-width: $medium-devices ) and ( max-width: $large-devices)
+            width: 55%
+            font-size: 22px
+            margin-bottom: 5%
+        @media screen and ( min-width: $small-devices ) and ( max-width: $large-devices) and (orientation: landscape)
+            font-size: 12px
+            margin-bottom: 3%
+            width: 35%
+        @media screen and ( min-width: $large-devices ) and ( max-width: $extra-large-devices)
+            width: 50%
+            font-size: 20px
+            margin-bottom: 5%
+    button
+        background: #D8D6F1
+        border: 2px solid $font-color
+        border-radius: 50px
+        width: 10%
+        height: 5vh
+        margin-bottom: 2%
+        @media screen and ( max-width: $small-devices )
+            width: 40%
+        @media screen and ( min-width: $small-devices ) and ( max-width: $medium-devices) and (orientation: portrait)
+            width: 20%
+        @media screen and ( min-width: $medium-devices ) and ( max-width: $extra-large-devices)
+            width: 20%
+        @media screen and ( min-width: $small-devices ) and ( max-width: $large-devices) and (orientation: landscape)
+            width: 15%
+            font-size: 10px
+
+main
+    .cloud-left
+        left: 0%
+    img
+        @include cloud-size-position
+        &:nth-last-child(1)
+            right: 0%
+        @media screen and ( max-width: $small-devices )
+            width: 40%
+        @media screen and ( min-width: $small-devices ) and ( max-width: $medium-devices) and (orientation: portrait)
+            width: 35%
+        @media screen and ( min-width: $medium-devices ) and ( max-width: $large-devices)
+            width: 40%
+        @media screen and ( min-width: $small-devices ) and ( max-width: $large-devices) and (orientation: landscape)
+            width:25%
+        @media screen and ( min-width: $large-devices ) and ( max-width: $extra-large-devices) 
+            width: 25%

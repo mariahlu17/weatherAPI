@@ -1,0 +1,570 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+.app-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.back-arrow {
+  position: absolute;
+  left: 3%;
+  top: 5%;
+  width: 3%;
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .back-arrow {
+    left: 5%;
+    width: 6%;
+  }
+}
+
+.main-temp-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.main-temp-description .city-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+  color: #3D3D3D;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 600px) {
+  .main-temp-description .city-name {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 3%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: portrait) {
+  .main-temp-description .city-name {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 3%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: landscape) {
+  .main-temp-description .city-name {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 2%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .main-temp-description .city-name {
+    font-size: 45px;
+    line-height: 48px;
+    margin-bottom: 3%;
+  }
+}
+.main-temp-description .date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #3D3D3D;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 600px) {
+  .main-temp-description .date {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: portrait) {
+  .main-temp-description .date {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: landscape) {
+  .main-temp-description .date {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 3%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .main-temp-description .date {
+    font-size: 25px;
+    line-height: 24px;
+    margin-bottom: 5%;
+  }
+}
+.main-temp-description .temp-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgba(101, 98, 147, 0.45);
+  border-radius: 50px;
+  width: 15%;
+  height: 2vh;
+  padding: 3%;
+  margin-bottom: 1%;
+}
+@media screen and (max-width: 600px) {
+  .main-temp-description .temp-box {
+    width: 40%;
+    height: 3vh;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: portrait) {
+  .main-temp-description .temp-box {
+    width: 30%;
+    height: 3vh;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: landscape) {
+  .main-temp-description .temp-box {
+    width: 20%;
+    height: 3vh;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .main-temp-description .temp-box {
+    width: 25%;
+    height: 3vh;
+    margin-bottom: 3%;
+  }
+}
+.main-temp-description .temp {
+  width: 50%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 62px;
+  text-align: center;
+  color: #3D3D3D;
+}
+@media screen and (max-width: 600px) {
+  .main-temp-description .temp {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: portrait) {
+  .main-temp-description .temp {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: landscape) {
+  .main-temp-description .temp {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.main-temp-description img {
+  width: 50%;
+  position: relative;
+}
+.main-temp-description .temp-description {
+  color: #3D3D3D;
+  font-size: 25px;
+  line-height: 24px;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 600px) {
+  .main-temp-description .temp-description {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: portrait) {
+  .main-temp-description .temp-description {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: landscape) {
+  .main-temp-description .temp-description {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 2%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .main-temp-description .temp-description {
+    font-size: 25px;
+    line-height: 22px;
+    margin-bottom: 5%;
+  }
+}
+
+.weather-response {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  justify-content: space-around;
+  margin-top: 2%;
+  color: #3D3D3D;
+  font-size: 25px;
+  line-height: 30px;
+}
+.weather-response p {
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 600px) {
+  .weather-response {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .weather-response p {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: portrait) {
+  .weather-response {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: landscape) {
+  .weather-response {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    font-size: 15px;
+    line-height: 10px;
+  }
+  .weather-response .temp-feel-pressure {
+    width: 50%;
+  }
+  .weather-response .temp-hum-speed {
+    width: 50%;
+  }
+}
+.weather-response span {
+  color: #413F64;
+}
+.weather-response .temp-feel-pressure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.weather-response .temp-hum-speed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Zen Dots", cursive;
+}
+
+body {
+  background: linear-gradient(180deg, #F5F5F5 18.23%, rgba(71, 58, 219, 0.78) 100%);
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  margin-bottom: 10%;
+}
+header .centigrade-main-img {
+  width: 20%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .centigrade-main-img img {
+  width: 50%;
+  margin-left: -20%;
+}
+@media screen and (max-width: 600px) {
+  header .centigrade-main-img img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) and (orientation: portrait) {
+  header .centigrade-main-img img {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header .centigrade-main-img img {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: landscape) {
+  header .centigrade-main-img img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) and (orientation: portrait) {
+  main {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  main {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: landscape) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  main {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.check-weather {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.check-weather h1 {
+  font-size: 60px;
+  color: #3D3D3D;
+  width: 50%;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+  margin-bottom: 5%;
+}
+@media screen and (max-width: 600px) {
+  .check-weather h1 {
+    font-size: 30px;
+    line-height: 30px;
+    width: 70%;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) and (orientation: portrait) {
+  .check-weather h1 {
+    font-size: 40px;
+    line-height: 48px;
+    width: 75%;
+    margin-bottom: 8%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .check-weather h1 {
+    font-size: 45px;
+    line-height: 48px;
+    width: 70%;
+    margin-bottom: 8%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: landscape) {
+  .check-weather h1 {
+    font-size: 25px;
+    line-height: 40px;
+    width: 75%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .check-weather h1 {
+    font-size: 45px;
+    line-height: 48px;
+    width: 60%;
+  }
+}
+.check-weather input {
+  background: #867DE4;
+  border: 2px solid #3D3D3D;
+  border-radius: 50px;
+  color: #D8D6F1;
+  width: 40%;
+  height: 5vh;
+  font-size: 25px;
+  outline: none;
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 25px;
+}
+.check-weather input:-ms-input-placeholder {
+  color: #D8D6F1;
+  text-align: center;
+}
+.check-weather input::-moz-placeholder {
+  color: #D8D6F1;
+  text-align: center;
+}
+.check-weather input::placeholder {
+  color: #D8D6F1;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .check-weather input {
+    width: 70%;
+    font-size: 15px;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) and (orientation: portrait) {
+  .check-weather input {
+    width: 60%;
+    font-size: 20px;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .check-weather input {
+    width: 55%;
+    font-size: 22px;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: landscape) {
+  .check-weather input {
+    font-size: 12px;
+    margin-bottom: 3%;
+    width: 35%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .check-weather input {
+    width: 50%;
+    font-size: 20px;
+    margin-bottom: 5%;
+  }
+}
+.check-weather button {
+  background: #D8D6F1;
+  border: 2px solid #3D3D3D;
+  border-radius: 50px;
+  width: 10%;
+  height: 5vh;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 600px) {
+  .check-weather button {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) and (orientation: portrait) {
+  .check-weather button {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .check-weather button {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: landscape) {
+  .check-weather button {
+    width: 15%;
+    font-size: 10px;
+  }
+}
+
+main .cloud-left {
+  left: 0%;
+}
+main img {
+  width: 20%;
+  position: absolute;
+  bottom: 0%;
+}
+main img:nth-last-child(1) {
+  right: 0%;
+}
+@media screen and (max-width: 600px) {
+  main img {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) and (orientation: portrait) {
+  main img {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  main img {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) and (orientation: landscape) {
+  main img {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  main img {
+    width: 25%;
+  }
+}/*# sourceMappingURL=style.css.map */
